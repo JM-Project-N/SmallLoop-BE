@@ -1,7 +1,7 @@
 package com.project.projectN.calender.entity;
 
 import com.project.projectN.audit.Auditable;
-import com.vladmihalcea.hibernate.type.json.JsonBinaryType;
+//import com.vladmihalcea.hibernate.type.json.JsonBinaryType;
 import jakarta.persistence.*;
 import org.hibernate.annotations.Type;
 
@@ -22,17 +22,17 @@ public class CalendarDateInfo extends Auditable {
     @Column(name = "EXCLUDING_PUBLIC_HOLIDAYS")
     private Boolean excludingPublicHolidays; // 공휴일 포함 여부
 
-    @Type(JsonBinaryType.class)
-    @Column(name = "DAY_OF_MONTH", columnDefinition = "jsonb")
-    private List<Integer> dayOfMonth; // 특정일
-
-    @Type(JsonBinaryType.class)
-    @Column(name = "WEEK_OF_MONTH", columnDefinition = "jsonb")
-    private List<Integer> weekOfMonth; // 특정 주
-
-    @Type(JsonBinaryType.class)
-    @Column(name = "DAY_OF_WEEK", columnDefinition = "jsonb")
-    private List<Integer> dayOfWeek; // 특정 요일
+//    @Type(JsonBinaryType.class)
+//    @Column(name = "DAY_OF_MONTH", columnDefinition = "jsonb")
+//    private List<String> dayOfMonth; // 특정일
+//
+//    @Type(JsonBinaryType.class)
+//    @Column(name = "WEEK_OF_MONTH", columnDefinition = "jsonb")
+//    private List<String> weekOfMonth; // 특정 주
+//
+//    @Type(JsonBinaryType.class)
+//    @Column(name = "DAY_OF_WEEK", columnDefinition = "jsonb")
+//    private List<String> dayOfWeek; // 특정 요일
 
     @Column(name = "SCHEDULE_START")
     private LocalDateTime scheduleStart; // 일정 시작 날짜

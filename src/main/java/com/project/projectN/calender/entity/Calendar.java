@@ -27,7 +27,7 @@ public class Calendar {
     @Column(name = "TITLE", length = 64)
     private String title; // 제목
 
-    @Column(name = "DESCRIPTION", columnDefinition = "BLOB")
+    @Column(name = "DESCRIPTION")
     private String description; // 설명
 
     @Column(name = "PUBLIC")
